@@ -4,8 +4,10 @@ from .import views
 
 router = routers.DefaultRouter()
 router.register('heroes', views.HeroViewSet)
-router.register('timmy', views.TimmyViewSet)
+router.register('listings', views.ListingsViewSet)
 router.register('actors', views.ActorViewSet)
+router.register('myapps', views.UserappsViewSet)
+
 
 urlpatterns = [
     path('api/v1/', include(router.urls)),
